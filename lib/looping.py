@@ -5,14 +5,17 @@ def happy_new_year():
     while (i > 0):
         print(i)
         i -= 1
-    print("Happy New Year!")
+    return "Happy New Year!\n"
 
 def square_integers(int_list):
-    # code goes here!
-    pass
+    int_list = [integer * integer for integer in int_list]
+    return int_list
 
 def fizzbuzz():
     # code goes here!
     pass
 
+# happy new year
 print(happy_new_year())
+# square integers
+print(square_integers([1, 2, 3, 4]))
